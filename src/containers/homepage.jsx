@@ -4,6 +4,7 @@ import axios from "axios";
 
 export default function Homepage() {
 	useEffect(() => {
+		// calling the api
 		axios
 			.get("https://pokeapi.co/api/v2/pokemon?limit=800")
 			.then((response) => {
