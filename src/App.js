@@ -1,15 +1,17 @@
-import { Router, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import AppNavigator from "./components/Layout/AppNavigator";
-import homepage from "./containers/homepage";
+import Homepage from "./containers/homepage";
 
 function App() {
 	return (
 		<div className="App">
 			<div className="App-header">
 				<AppNavigator />
-				<Route path="/" exact component={homepage}>
-					Home
-				</Route>
+				<Routes>
+					<Route path="/" exact element={<Homepage />}>
+						Home
+					</Route>
+				</Routes>
 			</div>
 		</div>
 	);
