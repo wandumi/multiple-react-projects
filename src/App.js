@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import AppNavigator from './components/Layout/AppNavigator'
-import Birthday from './containers/Birthday'
+import Birthday from './containers/Birthday/Birthday'
 import Pokemon from './containers/Pokemon/Pokemon'
 import Home from './containers/Home/Home'
 import PokemonDetails from './containers/Pokemon/PokemonDetails'
@@ -17,8 +17,8 @@ function App() {
           <Route path='/pokemon' exact element={<Pokemon />}>
             Pokemon
           </Route>
-          <Route path='/pokemon/:id' element={<PokemonDetails />}></Route>
-          <Route path='/birthday' element={<Birthday />}>
+          <Route path='/pokemon/:id' exact element={<PokemonDetails />}></Route>
+          <Route path='/birthday' exact element={<Birthday />}>
             Birthday
           </Route>
         </Routes>

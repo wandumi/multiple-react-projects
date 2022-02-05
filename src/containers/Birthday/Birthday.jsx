@@ -4,8 +4,13 @@ import { Person } from '@material-ui/icons'
 
 export default function Birthday() {
   return (
-    <div>
-      <Button variant='contained' size='large' startIcon={<Person />}>
+    <div style={{ margin: 100 }}>
+      <Button
+        variant='contained'
+        color='secondary'
+        size='small'
+        startIcon={<Person />}
+      >
         Wandumi
       </Button>
     </div>
