@@ -27,9 +27,6 @@ export default function AppNavigator() {
         <Link to='/pokemon' className={classes.link}>
           <Typography className={classes.title}>Pokemons</Typography>
         </Link>
-        <Link to='/birthday' className={classes.link}>
-          <Typography className={classes.title}>Birthdays</Typography>
-        </Link>
       </Toolbar>
     </AppBar>
   )
